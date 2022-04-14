@@ -1,2 +1,6 @@
-# Bin_visualization
-I will put here some of the scripts I have used to visualize the data. 
+# Bin tools
+
+Here are some scripts to do stuff with your bins.
+
+- Create bubble plots
+- Calculate genome statistics
