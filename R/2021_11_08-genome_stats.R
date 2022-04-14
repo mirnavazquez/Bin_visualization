@@ -40,11 +40,11 @@ extract_table <-function(DNA_file, AA_file){
 }
 
 # Extract the paths for the genome and proteome files ---------------------####
-genomes<-list.files("data/01.Andreas_bins/13.Bins_megahit/02.Genome_renamed/01.Bins_filter/")
-genomes_files<-paste0("/Users/kiley/Documents/10.AndreaData/data/01.Andreas_bins/13.Bins_megahit/02.Genome_renamed/01.Bins_filter/", genomes)
+genomes<-list.files("data/Bin_example/Genome/")
+genomes_files<-paste0("/Users/kiley/Documents/Bin_visualization/data/Bin_example/Genome/", genomes)
 
-proteimes<-list.files("data/01.Andreas_bins/13.Bins_megahit/03.Proteome/01.Bins_filter/")
-proteimes_files<-paste0("/Users/kiley/Documents/10.AndreaData/data/01.Andreas_bins/13.Bins_megahit/03.Proteome/01.Bins_filter/", proteimes)
+proteimes<-list.files("data/Bin_example/Proteome/")
+proteimes_files<-paste0("/Users/kiley/Documents/Bin_visualization/data/Bin_example/Proteome/", proteimes)
 
 # Use map to create the table for multiple files --------------------------####
 genome_statistics<-map2_df(genomes_files, proteimes_files, extract_table) #%>%

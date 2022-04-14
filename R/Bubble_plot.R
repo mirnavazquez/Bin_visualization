@@ -31,4 +31,6 @@ ggplot(data_long,
                                    angle = 45, 
                                    hjust = 1, 
                                    vjust = 1),
-        axis.text.y = element_text(size=8))
+        axis.text.y = element_text(size=8)) +
+  xlab("Taxa") + 
+  ylab("Genes")
